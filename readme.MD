@@ -1,7 +1,7 @@
 ## To install and run:
 
 * Clone this repository
-* `cd` setupad-express-api
+* `cd setupad-express-api`
 * `npm install`
 * `npm start`
 
