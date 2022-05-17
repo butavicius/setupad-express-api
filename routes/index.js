@@ -13,6 +13,7 @@ router.get(
       res.json(result);
     } catch (error) {
       if (config.environment === "production") {
+        res.status(404);
         res.json({
           error:
             "There has been an error with your request. Make sure startDate and endDate are valid.",
