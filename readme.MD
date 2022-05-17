@@ -5,7 +5,13 @@
 * `npm install`
 * `npm start`
 
-You can make a request to `/api/getPriceHistory/{startDate}/{endDate} to get CoinDesk answer` now.
+Server starts listening on port 3000 by default.
+
+You can make a request to `/api/getPriceHistory/{startDate}/{endDate}` to get CoinDesk answer now.
+
+`startDate` and `endDate` format is `yyyy-mm-dd`. Example request:
+
+`http://localhost:3000/api/getPriceHistory/2019-05-02/2020-05-03`
 
 ## To run in development mode:
 * `npm run dev`
