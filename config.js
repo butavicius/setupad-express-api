@@ -1,6 +1,6 @@
 const configDefault = {
   apiURL: "https://api.coindesk.com/v1/bpi/historical/close.json",
-  environment: "development",
+  environment: "production",
     // allowedIPs: '192.168.43.2, 192.168.43.1',
   rateLimit: {
     windowMs: 15 * 60 * 1000,
@@ -18,8 +18,6 @@ export default {
       process.env.SETUPAD_RATE_LIMIT_WINDOWMS ||
       configDefault.rateLimit.windowMs,
     max: process.env.SETUPAD_RATE_LIMIT_MAX || configDefault.rateLimit.max,
-    standardHeaders:
-      !!process.env.SETUPAD_RATE_LIMIT_STANDARD_HEADERS ||
-      configDefault.standardHeaders,
+    standardHeaders: configDefault.standardHeaders,
   },
 };
